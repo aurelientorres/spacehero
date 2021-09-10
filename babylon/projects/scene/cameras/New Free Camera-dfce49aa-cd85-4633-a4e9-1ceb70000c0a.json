@@ -1,0 +1,83 @@
+{
+	"tags": null,
+	"ellipsoid": [
+		0.5,
+		1,
+		0.5
+	],
+	"ellipsoidOffset": [
+		0,
+		0,
+		0
+	],
+	"checkCollisions": false,
+	"applyGravity": false,
+	"rotation": [
+		0,
+		-3.135634458380963,
+		0
+	],
+	"speed": 2,
+	"position": [
+		-0.8348589539527893,
+		15.239997863769531,
+		-140.1182403564453
+	],
+	"upVector": [
+		0,
+		1,
+		0
+	],
+	"fov": 0.2,
+	"minZ": 1,
+	"maxZ": 100000,
+	"inertia": 0.9,
+	"mode": 0,
+	"layerMask": 268435455,
+	"fovMode": 0,
+	"cameraRigMode": 0,
+	"name": "New Free Camera",
+	"id": "dfce49aa-cd85-4633-a4e9-1ceb70000c0a",
+	"state": "",
+	"metadata": {
+		"script": {
+			"name": "None"
+		},
+		"doNotExport": false
+	},
+	"type": "FreeCamera",
+	"inputsmgr": {
+		"FreeCameraKeyboardMoveInput": {
+			"tags": null,
+			"keysUp": [
+				38
+			],
+			"keysUpward": [
+				33
+			],
+			"keysDown": [
+				40
+			],
+			"keysDownward": [
+				34
+			],
+			"keysLeft": [
+				37
+			],
+			"keysRight": [
+				39
+			]
+		},
+		"FreeCameraMouseInput": {
+			"tags": null,
+			"buttons": [
+				0,
+				1,
+				2
+			],
+			"angularSensibility": 2000
+		}
+	},
+	"animations": [],
+	"ranges": []
+}

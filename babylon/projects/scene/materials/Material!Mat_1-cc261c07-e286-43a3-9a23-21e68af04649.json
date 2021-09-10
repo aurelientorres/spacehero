@@ -1,0 +1,73 @@
+{
+	"tags": null,
+	"ambient": [
+		0,
+		0,
+		0
+	],
+	"diffuse": [
+		0.32156863808631897,
+		0.3490196168422699,
+		0.3764705955982208
+	],
+	"specular": [
+		0,
+		0,
+		0
+	],
+	"emissive": [
+		0,
+		0,
+		0
+	],
+	"specularPower": 64,
+	"useAlphaFromDiffuseTexture": false,
+	"useEmissiveAsIllumination": false,
+	"linkEmissiveWithDiffuse": false,
+	"useSpecularOverAlpha": false,
+	"useReflectionOverAlpha": false,
+	"disableLighting": false,
+	"useObjectSpaceNormalMap": false,
+	"useParallax": false,
+	"useParallaxOcclusion": false,
+	"parallaxScaleBias": 0.05,
+	"roughness": 0,
+	"indexOfRefraction": 0.98,
+	"invertRefractionY": true,
+	"alphaCutOff": 0.4,
+	"useLightmapAsShadowmap": false,
+	"useReflectionFresnelFromSpecular": false,
+	"useGlossinessFromSpecularMapAlpha": false,
+	"maxSimultaneousLights": 4,
+	"invertNormalMapX": false,
+	"invertNormalMapY": false,
+	"twoSidedLighting": false,
+	"id": "cc261c07-e286-43a3-9a23-21e68af04649",
+	"name": "Material::Mat_1",
+	"checkReadyOnEveryCall": false,
+	"checkReadyOnlyOnce": false,
+	"state": "",
+	"alpha": 1,
+	"backFaceCulling": true,
+	"sideOrientation": 1,
+	"alphaMode": 2,
+	"_needDepthPrePass": false,
+	"disableDepthWrite": false,
+	"disableColorWrite": false,
+	"forceDepthWrite": false,
+	"depthFunction": 0,
+	"separateCullingPass": false,
+	"fogEnabled": true,
+	"pointSize": 1,
+	"zOffset": 0,
+	"pointsCloud": false,
+	"fillMode": 0,
+	"metadata": {
+		"originalSourceFile": {
+			"id": "369520448",
+			"name": "Material::Mat_1",
+			"sceneFileName": "Sci Fi Corridor.fbx"
+		},
+		"isLocked": false
+	}
+}

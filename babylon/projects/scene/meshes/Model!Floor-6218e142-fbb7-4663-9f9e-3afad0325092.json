@@ -1,0 +1,153 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Model::Floor",
+			"id": "6218e142-fbb7-4663-9f9e-3afad0325092",
+			"uniqueId": 14,
+			"type": "Mesh",
+			"position": [
+				0,
+				5.773438202247007,
+				-499.99999999999994
+			],
+			"rotationQuaternion": [
+				0,
+				0,
+				0,
+				1
+			],
+			"scaling": [
+				1,
+				1,
+				1
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": false,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": null,
+			"parentId": "Model::1",
+			"isUnIndexed": false,
+			"geometryId": "bfa39506-908e-4602-91e3-bd8b6d5bf11f",
+			"subMeshes": null,
+			"materialId": "cc261c07-e286-43a3-9a23-21e68af04649",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": 1,
+					"1": 0,
+					"2": 0,
+					"3": 0,
+					"4": 0,
+					"5": 1,
+					"6": 0,
+					"7": 0,
+					"8": 0,
+					"9": 0,
+					"10": 1,
+					"11": 0,
+					"12": 0,
+					"13": 0,
+					"14": 0,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Model::Floor",
+					"name": "Model::Floor",
+					"sceneFileName": "Sci Fi Corridor.fbx"
+				},
+				"isPickable": true,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/bfa39506-908e-4602-91e3-bd8b6d5bf11f.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				557.3289184570312,
+				2,
+				500
+			],
+			"boundingBoxMinimum": [
+				-557.3289184570312,
+				-2,
+				-500
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 30276,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 30276,
+					"stride": 3,
+					"offset": 121104,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 20184,
+					"stride": 2,
+					"offset": 242208,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 10092,
+					"stride": 1,
+					"offset": 322944,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 363312,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

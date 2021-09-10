@@ -1,0 +1,41 @@
+{
+	"tags": null,
+	"shadowAngle": 1.5707963267948966,
+	"diffuse": [
+		1,
+		0.9882352941176471,
+		0.8705882352941177
+	],
+	"specular": [
+		1,
+		1,
+		1
+	],
+	"falloffType": 0,
+	"intensity": 1,
+	"range": 1.7976931348623157e+308,
+	"intensityMode": 0,
+	"radius": 0.00001,
+	"_renderPriority": 0,
+	"shadowEnabled": true,
+	"excludeWithLayerMask": 0,
+	"includeOnlyWithLayerMask": 0,
+	"lightmapMode": 0,
+	"position": [
+		0,
+		25.354759216308594,
+		-749.03955078125
+	],
+	"name": "lamp4",
+	"id": "0abef489-fc8e-4431-b846-0add755b1b5a",
+	"state": "",
+	"metadata": {
+		"script": {
+			"name": "src/scenes/light_blink.ts"
+		},
+		"doNotExport": false
+	},
+	"type": 0,
+	"animations": [],
+	"ranges": []
+}
