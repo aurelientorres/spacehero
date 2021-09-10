@@ -1,26 +1,24 @@
 {
-	"materials": [],
 	"meshes": [
 		{
-			"name": "Model::Frame",
-			"id": "a0717e51-a73b-4a12-b1ac-3f48e00c7192",
-			"uniqueId": 8,
+			"name": "fret",
+			"id": "5c8d0df9-7399-4bce-83c7-a1cb2257765a",
+			"uniqueId": 2485,
 			"type": "Mesh",
 			"position": [
 				0,
-				0.00007116104865190209,
+				0.5,
+				-555
+			],
+			"rotation": [
+				0,
+				0,
 				0
 			],
-			"rotationQuaternion": [
-				0,
-				0,
-				0,
-				-1
-			],
 			"scaling": [
+				25,
 				1,
-				1,
-				1
+				5
 			],
 			"localMatrix": {
 				"0": 1,
@@ -50,40 +48,16 @@
 			"checkCollisions": false,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
-			"parentId": "Model::Bottom",
 			"isUnIndexed": false,
-			"geometryId": "3308f945-99f5-4158-9f6a-50eae5b6b8cc",
+			"geometryId": "839182c4-203a-4a36-978e-756389254f14",
 			"subMeshes": null,
-			"materialId": "cc261c07-e286-43a3-9a23-21e68af04649",
 			"metadata": {
-				"basePoseMatrix": {
-					"0": 1,
-					"1": 0,
-					"2": 0,
-					"3": 0,
-					"4": 0,
-					"5": 1,
-					"6": 0,
-					"7": 0,
-					"8": 0,
-					"9": 0,
-					"10": 1,
-					"11": 0,
-					"12": 0,
-					"13": 0,
-					"14": 0,
-					"15": 1
-				},
-				"originalSourceFile": {
-					"id": "Model::Frame",
-					"name": "Model::Frame",
-					"sceneFileName": "Sci Fi Corridor.fbx"
-				},
 				"isPickable": true,
 				"script": {
-					"name": "None"
+					"name": "src/scenes/fret.ts"
 				},
-				"renderingGroupId": 0
+				"renderingGroupId": 0,
+				"doNotExport": false
 			},
 			"instances": [],
 			"animations": [],
@@ -98,46 +72,46 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/3308f945-99f5-4158-9f6a-50eae5b6b8cc.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/839182c4-203a-4a36-978e-756389254f14.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
-				634.1785278320312,
-				90.02246856689453,
-				492
+				0.5,
+				0.5,
+				0.5
 			],
 			"boundingBoxMinimum": [
-				-634.1785278320312,
-				-90.02246856689453,
-				-492
+				-0.5,
+				-0.5,
+				-0.5
 			],
 			"_binaryInfo": {
 				"positionsAttrDesc": {
-					"count": 1440,
+					"count": 72,
 					"stride": 3,
 					"offset": 0,
 					"dataType": 1
 				},
 				"normalsAttrDesc": {
-					"count": 1440,
+					"count": 72,
 					"stride": 3,
-					"offset": 5760,
+					"offset": 288,
 					"dataType": 1
 				},
 				"uvsAttrDesc": {
-					"count": 960,
+					"count": 48,
 					"stride": 2,
-					"offset": 11520,
+					"offset": 576,
 					"dataType": 1
 				},
 				"indicesAttrDesc": {
-					"count": 480,
+					"count": 36,
 					"stride": 1,
-					"offset": 15360,
+					"offset": 768,
 					"dataType": 0
 				},
 				"subMeshesAttrDesc": {
 					"count": 1,
 					"stride": 5,
-					"offset": 17280,
+					"offset": 912,
 					"dataType": 0
 				}
 			},
@@ -148,6 +122,7 @@
 			"indices": null
 		}
 	],
+	"materials": [],
 	"multiMaterials": [],
 	"lods": []
 }

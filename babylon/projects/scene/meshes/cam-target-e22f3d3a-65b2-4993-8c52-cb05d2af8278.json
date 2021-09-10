@@ -2,15 +2,15 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "cube",
+			"name": "cam-target",
 			"id": "e22f3d3a-65b2-4993-8c52-cb05d2af8278",
-			"uniqueId": 16,
+			"uniqueId": 12,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
 				0,
-				0.5194425692942746,
-				0
+				-30,
+				-1000
 			],
 			"rotation": [
 				0,
@@ -46,7 +46,7 @@
 			"pickable": true,
 			"receiveShadows": false,
 			"billboardMode": 0,
-			"visibility": 1,
+			"visibility": 0,
 			"checkCollisions": false,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
@@ -59,7 +59,8 @@
 				"script": {
 					"name": "None"
 				},
-				"renderingGroupId": 0
+				"renderingGroupId": 0,
+				"doNotExport": false
 			},
 			"instances": [],
 			"animations": [],

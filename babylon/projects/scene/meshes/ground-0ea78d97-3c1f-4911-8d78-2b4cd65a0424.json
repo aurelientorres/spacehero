@@ -4,13 +4,13 @@
 		{
 			"name": "ground",
 			"id": "0ea78d97-3c1f-4911-8d78-2b4cd65a0424",
-			"uniqueId": 20,
+			"uniqueId": 13,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				0.01,
 				0,
-				0
+				0.4,
+				-775
 			],
 			"rotation": [
 				0,
@@ -18,9 +18,9 @@
 				0
 			],
 			"scaling": [
-				10.00000035351619,
-				0.10000000170780404,
-				100.0000036617324
+				25,
+				0.01,
+				450
 			],
 			"localMatrix": {
 				"0": 1,
@@ -57,9 +57,10 @@
 			"metadata": {
 				"isPickable": true,
 				"script": {
-					"name": "None"
+					"name": "src/scenes/ground.ts"
 				},
-				"renderingGroupId": 0
+				"renderingGroupId": 0,
+				"doNotExport": false
 			},
 			"instances": [],
 			"animations": [],

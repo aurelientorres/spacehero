@@ -13,39 +13,39 @@
 	"checkCollisions": false,
 	"applyGravity": false,
 	"rotation": [
-		0,
-		-3.135634458380963,
+		0.018811212509700047,
+		-3.1988380009920814,
 		0
 	],
 	"speed": 2,
 	"position": [
-		-0.8348589539527893,
-		15.239997863769531,
-		-140.1182403564453
+		0,
+		25,
+		-445
 	],
 	"upVector": [
 		0,
 		1,
 		0
 	],
-	"fov": 0.2,
+	"fov": 0.25,
 	"minZ": 1,
-	"maxZ": 100000,
+	"maxZ": 1708593.75,
 	"inertia": 0.9,
 	"mode": 0,
 	"layerMask": 268435455,
 	"fovMode": 0,
 	"cameraRigMode": 0,
-	"name": "New Free Camera",
+	"name": "cam",
 	"id": "dfce49aa-cd85-4633-a4e9-1ceb70000c0a",
 	"state": "",
 	"metadata": {
 		"script": {
-			"name": "None"
+			"name": "src/scenes/cam.ts"
 		},
 		"doNotExport": false
 	},
-	"type": "FreeCamera",
+	"type": "UniversalCamera",
 	"inputsmgr": {
 		"FreeCameraKeyboardMoveInput": {
 			"tags": null,

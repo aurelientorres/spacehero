@@ -4,6 +4,9 @@ import { ScriptMap } from "./tools";
  */
 export interface ISceneScriptMap extends ScriptMap {
     "src/scenes/bg-move.ts": any;
+    "src/scenes/cam.ts": any;
+    "src/scenes/fret.ts": any;
+    "src/scenes/ground.ts": any;
     "src/scenes/light_blink.ts": any;
 }
 /**

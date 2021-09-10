@@ -36,7 +36,7 @@ export class Game {
                 if (!this.scene.activeCamera) {
                     throw new Error("No camera defined in the scene. Please add at least one camera in the project or create one yourself in the code.");
                 }
-                this.scene.activeCamera.attachControl(this.engine.getRenderingCanvas(), false);
+                // this.scene.activeCamera.attachControl(this.engine.getRenderingCanvas(), false);
 
                 // Run the scene to attach scripts etc.
                 runScene(this.scene, rootUrl);

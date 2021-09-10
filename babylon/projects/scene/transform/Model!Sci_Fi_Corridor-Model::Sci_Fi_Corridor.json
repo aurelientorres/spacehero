@@ -2,7 +2,7 @@
 	"tags": null,
 	"position": [
 		0,
-		-9.952170372009277,
+		0,
 		0
 	],
 	"rotation": [
@@ -17,7 +17,7 @@
 		1
 	],
 	"scaling": [
-		0.045575883239507675,
+		0.0455,
 		0.045575883239507675,
 		1
 	],
@@ -32,7 +32,8 @@
 	"metadata": {
 		"script": {
 			"name": "None"
-		}
+		},
+		"doNotExport": false
 	},
 	"type": "TransformNode",
 	"localMatrix": {
