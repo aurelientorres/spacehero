@@ -24,7 +24,8 @@ export default class MyScript extends GroundMesh {
      * @warn do not fill.
      */
     // @ts-ignore ignoring the super call as we don't want to re-init
-    protected constructor() { }
+    protected constructor() { 
+    }
 
     /**
      * Called on the node is being initialized.
