@@ -120,6 +120,16 @@
 			"id": "space_bg.jpeg",
 			"key": "e4e595af-75a2-4510-a4f0-8d0a7873cb60",
 			"base64": "/Users/yann/Documents/babylon/projects/scene/files/space_bg.jpeg"
+		},
+		{
+			"id": "fire.png",
+			"key": "378cc017-f698-410f-8a97-0355cd16497c",
+			"base64": "/home/v/Desktop/INTECH/babylon-js/babintech/babylon/projects/scene/files/fire.png"
+		},
+		{
+			"id": "spark_final.png",
+			"key": "376da80d-1213-4b5d-beec-c076932c6ae3",
+			"base64": "/home/v/Desktop/INTECH/babylon-js/babintech/babylon/projects/scene/files/spark_final.png"
 		}
 	],
 	"Sounds": [],

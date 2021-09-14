@@ -1,4 +1,4 @@
-import { Mesh, Scene } from "@babylonjs/core";
+import { Mesh, Scene, KeyboardInfo } from "@babylonjs/core";
 /**
  * This represents a script that is attached to a node in the editor.
  * Available nodes are:
@@ -24,6 +24,7 @@ export default class MyScript extends Mesh {
      * @warn do not fill.
      */
     protected constructor(scene: Scene);
+    private _score;
     /**
      * Called on the node is being initialized.
      * This function is called immediatly after the constructor has been called.
@@ -44,4 +45,5 @@ export default class MyScript extends Mesh {
      * @param sender defines the reference to the graph class that sent the message.
      */
     onMessage(name: string, data: any, sender: any): void;
+    onKeyboard(touch: KeyboardInfo): void;
 }

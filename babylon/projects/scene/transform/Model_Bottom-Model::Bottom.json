@@ -2,8 +2,8 @@
 	"tags": null,
 	"position": [
 		0,
-		0,
-		0
+		162.32514232209724,
+		-499.99999999999994
 	],
 	"rotation": [
 		0,
@@ -26,8 +26,8 @@
 	"infiniteDistance": false,
 	"ignoreNonUniformScaling": false,
 	"reIntegrateRotationIntoRotationQuaternion": false,
-	"name": "Model::1",
-	"id": "Model::1",
+	"name": "Model_Bottom",
+	"id": "Model::Bottom",
 	"state": "",
 	"metadata": {
 		"script": {
@@ -35,7 +35,7 @@
 		}
 	},
 	"type": "TransformNode",
-	"parentId": "Model::Sci_Fi_Corridor",
+	"parentId": "Model::Sides",
 	"localMatrix": {
 		"0": 1,
 		"1": 0,

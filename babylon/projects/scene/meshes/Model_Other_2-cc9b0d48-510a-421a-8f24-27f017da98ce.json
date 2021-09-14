@@ -2,20 +2,20 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "Model::Bolts",
-			"id": "b7aaa21f-ef63-423d-9000-de1fd49075a8",
-			"uniqueId": 21,
+			"name": "Model_Other_2",
+			"id": "cc9b0d48-510a-421a-8f24-27f017da98ce",
+			"uniqueId": 15,
 			"type": "Mesh",
 			"position": [
-				-5.684341886080802e-14,
-				0.00007116104865190209,
-				0
+				0,
+				-2.042475216761318,
+				-0.32509668173781847
 			],
 			"rotationQuaternion": [
-				-8.659560562354932e-17,
-				-1.2942249226282225e-31,
-				0.7071067811865478,
-				-0.7071067811865472
+				0,
+				0,
+				0,
+				-1
 			],
 			"scaling": [
 				1,
@@ -50,11 +50,11 @@
 			"checkCollisions": false,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
-			"parentId": "Model::Bottom",
+			"parentId": "Model::Top",
 			"isUnIndexed": false,
-			"geometryId": "be721de6-b026-4e19-94a2-4937e6343a07",
+			"geometryId": "fdd79478-bdeb-483c-972a-245810b96840",
 			"subMeshes": null,
-			"materialId": "cc261c07-e286-43a3-9a23-21e68af04649",
+			"materialId": "43723be7-0276-486f-8eb8-2e01511b0a01",
 			"metadata": {
 				"basePoseMatrix": {
 					"0": 1,
@@ -75,11 +75,16 @@
 					"15": 1
 				},
 				"originalSourceFile": {
-					"id": "Model::Bolts",
-					"name": "Model::Bolts",
+					"id": "Model::Other_2",
+					"name": "Model::Other_2",
 					"sceneFileName": "Sci Fi Corridor.fbx"
 				},
-				"isPickable": true
+				"isPickable": true,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0,
+				"doNotExport": false
 			},
 			"instances": [],
 			"animations": [],
@@ -94,46 +99,46 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/be721de6-b026-4e19-94a2-4937e6343a07.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/fdd79478-bdeb-483c-972a-245810b96840.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
-				88.24372863769531,
-				645.1168823242188,
-				490.22125244140625
+				647.166015625,
+				61.73439407348633,
+				470.04998779296875
 			],
 			"boundingBoxMinimum": [
-				-88.24372863769531,
-				-645.1168823242188,
-				-490.22125244140625
+				-647.166015625,
+				-61.73439407348633,
+				-470.04998779296875
 			],
 			"_binaryInfo": {
 				"positionsAttrDesc": {
-					"count": 220320,
+					"count": 20304,
 					"stride": 3,
 					"offset": 0,
 					"dataType": 1
 				},
 				"normalsAttrDesc": {
-					"count": 220320,
+					"count": 20304,
 					"stride": 3,
-					"offset": 881280,
+					"offset": 81216,
 					"dataType": 1
 				},
 				"uvsAttrDesc": {
-					"count": 146880,
+					"count": 13536,
 					"stride": 2,
-					"offset": 1762560,
+					"offset": 162432,
 					"dataType": 1
 				},
 				"indicesAttrDesc": {
-					"count": 73440,
+					"count": 6768,
 					"stride": 1,
-					"offset": 2350080,
+					"offset": 216576,
 					"dataType": 0
 				},
 				"subMeshesAttrDesc": {
 					"count": 1,
 					"stride": 5,
-					"offset": 2643840,
+					"offset": 243648,
 					"dataType": 0
 				}
 			},

@@ -3,12 +3,12 @@
 		{
 			"name": "fret",
 			"id": "5c8d0df9-7399-4bce-83c7-a1cb2257765a",
-			"uniqueId": 19,
+			"uniqueId": 11,
 			"type": "Mesh",
 			"position": [
 				0,
 				1,
-				-552.5
+				-560
 			],
 			"rotation": [
 				0,

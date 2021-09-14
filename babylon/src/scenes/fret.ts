@@ -1,4 +1,6 @@
-import { Mesh, StandardMaterial, Scene, Color3 } from "@babylonjs/core";
+import { Mesh, StandardMaterial, Scene, Color3, KeyboardEventTypes, KeyboardInfo } from "@babylonjs/core";
+import { CubeFactory } from "../cubefactory";
+import { onKeyboardEvent } from "./decorators";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -26,6 +28,8 @@ export default class MyScript extends Mesh {
      */
     // @ts-ignore ignoring the super call as we don't want to re-init
     protected constructor(public scene: Scene) { }
+    
+    private _score: number = 0;
 
     /**
      * Called on the node is being initialized.
@@ -64,4 +68,49 @@ export default class MyScript extends Mesh {
                 break;
         }
     }
+        
+
+    @onKeyboardEvent(["a","z","e","r","t"], KeyboardEventTypes.KEYDOWN)
+    public onKeyboard(touch: KeyboardInfo): void {
+
+        console.log(touch.event.key);
+
+        CubeFactory.boxes.forEach((value, index)=> {
+            
+                if(value.GetMesh().intersectsMesh(this,false)){
+
+                    alert("test")
+                    switch(touch.event.key){
+                        case "a":
+                            if(value.GetMesh().position._x == -10)
+                                this._score++
+                            break;
+                        case "z":
+                            if(value.GetMesh().position._x == -5)
+                                this._score++
+                            break;
+                        case "e":
+                            if(value.GetMesh().position._x == 0)
+                                this._score++
+                            break;
+                        case "r":
+                            if(value.GetMesh().position._x == 5)
+                                this._score++
+                            break;
+                        case "t":
+                            if(value.GetMesh().position._x == 10)
+                                this._score++
+                            break
+                        
+                    }
+                    console.log(this._score)
+                }
+
+                
+               
+            
+        });
+
+    }
+
 }

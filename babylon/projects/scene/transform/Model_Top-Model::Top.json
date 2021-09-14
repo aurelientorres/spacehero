@@ -2,8 +2,8 @@
 	"tags": null,
 	"position": [
 		0,
-		0,
-		0
+		599.4694561142146,
+		-500.16254834086925
 	],
 	"rotation": [
 		0,
@@ -14,11 +14,11 @@
 		0,
 		0,
 		0,
-		1
+		-1
 	],
 	"scaling": [
-		0.0455,
-		0.045575883239507675,
+		1,
+		1,
 		1
 	],
 	"billboardMode": 0,
@@ -26,8 +26,8 @@
 	"infiniteDistance": false,
 	"ignoreNonUniformScaling": false,
 	"reIntegrateRotationIntoRotationQuaternion": false,
-	"name": "Model::Sci_Fi_Corridor",
-	"id": "Model::Sci_Fi_Corridor",
+	"name": "Model_Top",
+	"id": "Model::Top",
 	"state": "",
 	"metadata": {
 		"script": {
@@ -36,6 +36,7 @@
 		"doNotExport": false
 	},
 	"type": "TransformNode",
+	"parentId": "Model::Sides",
 	"localMatrix": {
 		"0": 1,
 		"1": 0,

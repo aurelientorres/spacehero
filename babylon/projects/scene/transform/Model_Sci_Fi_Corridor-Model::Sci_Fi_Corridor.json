@@ -14,11 +14,11 @@
 		0,
 		0,
 		0,
-		-1
+		1
 	],
 	"scaling": [
-		1,
-		1,
+		0.0455,
+		0.045575883239507675,
 		1
 	],
 	"billboardMode": 0,
@@ -26,16 +26,16 @@
 	"infiniteDistance": false,
 	"ignoreNonUniformScaling": false,
 	"reIntegrateRotationIntoRotationQuaternion": false,
-	"name": "Model::Sides",
-	"id": "Model::Sides",
+	"name": "Model_Sci_Fi_Corridor",
+	"id": "Model::Sci_Fi_Corridor",
 	"state": "",
 	"metadata": {
 		"script": {
 			"name": "None"
-		}
+		},
+		"doNotExport": false
 	},
 	"type": "TransformNode",
-	"parentId": "Model::1",
 	"localMatrix": {
 		"0": 1,
 		"1": 0,

@@ -23,6 +23,7 @@ export default class MyScript extends GroundMesh {
      * @warn do not fill.
      */
     protected constructor();
+    private _initPosition;
     /**
      * Called on the node is being initialized.
      * This function is called immediatly after the constructor has been called.

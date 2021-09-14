@@ -2,8 +2,8 @@
 	"tags": null,
 	"position": [
 		0,
-		599.4694561142146,
-		-500.16254834086925
+		0,
+		0
 	],
 	"rotation": [
 		0,
@@ -26,8 +26,8 @@
 	"infiniteDistance": false,
 	"ignoreNonUniformScaling": false,
 	"reIntegrateRotationIntoRotationQuaternion": false,
-	"name": "Model::Top",
-	"id": "Model::Top",
+	"name": "Model_Sides",
+	"id": "Model::Sides",
 	"state": "",
 	"metadata": {
 		"script": {
@@ -35,7 +35,7 @@
 		}
 	},
 	"type": "TransformNode",
-	"parentId": "Model::Sides",
+	"parentId": "Model::1",
 	"localMatrix": {
 		"0": 1,
 		"1": 0,

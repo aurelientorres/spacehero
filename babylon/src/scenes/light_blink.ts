@@ -1,4 +1,4 @@
-import { PointLight } from "@babylonjs/core";
+import { ParticleSystem, PointLight, Texture, Vector3 } from "@babylonjs/core";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -47,6 +47,25 @@ export default class MyScript extends PointLight {
     public onUpdate(): void {
         if(Math.random() * 11 <= 0.4) {
             this.intensity = 1 -  Math.random()/2; 
+
+            //Create a particle system
+
+
+            const particleSystem = new ParticleSystem("particles", 3000, this.getScene());
+            //Texture of each particle
+            particleSystem.particleTexture = new Texture("scenes/scene/files/spark_final.png", this.getScene());
+            // Position where the particles are emiited from
+            particleSystem.emitter = this.position;
+            particleSystem.direction1 = new Vector3(-6, -2, -1);
+            particleSystem.direction2 = new Vector3(6, -2, -1);
+            particleSystem.minSize = 0,1;
+            particleSystem.maxSize = Math.random() + 0.3;
+        
+            particleSystem.targetStopDuration = 1;
+            particleSystem.updateSpeed = 0.08;
+            particleSystem.minEmitBox = new Vector3(1, 1, 1); // Starting all from
+            particleSystem.maxEmitBox = new Vector3(-2, -2, -2);
+            particleSystem.start();
         }
     }
 

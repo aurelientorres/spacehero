@@ -2,25 +2,25 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "Model::Cylinders",
-			"id": "a1323965-05b1-44c6-8ecd-b3afd9ac1e46",
-			"uniqueId": 20,
+			"name": "Model_Floor",
+			"id": "6218e142-fbb7-4663-9f9e-3afad0325092",
+			"uniqueId": 17,
 			"type": "Mesh",
 			"position": [
-				1.1368683772161605e-13,
-				699.1820000000001,
-				-499.9999999999999
+				0,
+				5.773438202247007,
+				-499.99999999999994
 			],
 			"rotationQuaternion": [
 				0,
-				-1.224646799147353e-16,
 				0,
-				-1
+				0,
+				1
 			],
 			"scaling": [
-				0.9999999999999999,
 				1,
-				0.9999999999999999
+				1,
+				1
 			],
 			"localMatrix": {
 				"0": 1,
@@ -52,7 +52,7 @@
 			"overrideMaterialSideOrientation": null,
 			"parentId": "Model::1",
 			"isUnIndexed": false,
-			"geometryId": "b1ca39a7-adb2-4be5-8c2e-219fe33bd0d7",
+			"geometryId": "bfa39506-908e-4602-91e3-bd8b6d5bf11f",
 			"subMeshes": null,
 			"materialId": "cc261c07-e286-43a3-9a23-21e68af04649",
 			"metadata": {
@@ -75,15 +75,16 @@
 					"15": 1
 				},
 				"originalSourceFile": {
-					"id": "Model::Cylinders",
-					"name": "Model::Cylinders",
+					"id": "Model::Floor",
+					"name": "Model::Floor",
 					"sceneFileName": "Sci Fi Corridor.fbx"
 				},
 				"isPickable": true,
 				"script": {
 					"name": "None"
 				},
-				"renderingGroupId": 0
+				"renderingGroupId": 0,
+				"doNotExport": false
 			},
 			"instances": [],
 			"animations": [],
@@ -98,46 +99,46 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/b1ca39a7-adb2-4be5-8c2e-219fe33bd0d7.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/bfa39506-908e-4602-91e3-bd8b6d5bf11f.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
-				639.7266845703125,
-				14.154704093933105,
-				498.2015075683594
+				557.3289184570312,
+				2,
+				500
 			],
 			"boundingBoxMinimum": [
-				-639.7266845703125,
-				-14.154704093933105,
-				-498.2015075683594
+				-557.3289184570312,
+				-2,
+				-500
 			],
 			"_binaryInfo": {
 				"positionsAttrDesc": {
-					"count": 146160,
+					"count": 30276,
 					"stride": 3,
 					"offset": 0,
 					"dataType": 1
 				},
 				"normalsAttrDesc": {
-					"count": 146160,
+					"count": 30276,
 					"stride": 3,
-					"offset": 584640,
+					"offset": 121104,
 					"dataType": 1
 				},
 				"uvsAttrDesc": {
-					"count": 97440,
+					"count": 20184,
 					"stride": 2,
-					"offset": 1169280,
+					"offset": 242208,
 					"dataType": 1
 				},
 				"indicesAttrDesc": {
-					"count": 48720,
+					"count": 10092,
 					"stride": 1,
-					"offset": 1559040,
+					"offset": 322944,
 					"dataType": 0
 				},
 				"subMeshesAttrDesc": {
 					"count": 1,
 					"stride": 5,
-					"offset": 1753920,
+					"offset": 363312,
 					"dataType": 0
 				}
 			},

@@ -1,4 +1,4 @@
-import { Engine, GroundMesh } from "@babylonjs/core";
+import { Engine, GroundMesh, Vector2 } from "@babylonjs/core";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -26,6 +26,8 @@ export default class MyScript extends GroundMesh {
     // @ts-ignore ignoring the super call as we don't want to re-init
     protected constructor() { }
 
+    private _initPosition: Vector2;
+
     /**
      * Called on the node is being initialized.
      * This function is called immediatly after the constructor has been called.
@@ -38,7 +40,7 @@ export default class MyScript extends GroundMesh {
      * Called on the scene starts.
      */
     public onStart(): void {
-        // ...
+        this._initPosition = new Vector2(this.position.x, this.position.y)
     }
 
 
@@ -48,8 +50,8 @@ export default class MyScript extends GroundMesh {
      */
     public onUpdate(): void {
         this._time += this.getEngine().getDeltaTime() * 0.001 ;
-        this.position.x = Math.cos(this._time) * 2;
-        this.position.y = Math.sin(this._time) * 2;
+        this.position.x = (Math.cos(this._time) * 4) + this._initPosition.x;
+        this.position.y = (Math.sin(this._time) * 4) + this._initPosition.y;
     }
 
     /**

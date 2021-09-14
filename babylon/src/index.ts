@@ -1,9 +1,12 @@
-import { Engine, Scene, SceneLoader } from "@babylonjs/core";
+import { Engine, Scene, SceneLoader, GroundMesh, Mesh } from "@babylonjs/core";
 import "@babylonjs/materials";
+
+import  { CubeFactory } from "./cubefactory";
 
 import { runScene } from "./scenes/scene";
 
 export class Game {
+
     /**
      * Defines the engine used to draw the game using Babylon.JS and WebGL
      */
@@ -37,10 +40,14 @@ export class Game {
                     throw new Error("No camera defined in the scene. Please add at least one camera in the project or create one yourself in the code.");
                 }
                 // this.scene.activeCamera.attachControl(this.engine.getRenderingCanvas(), false);
-
+                this.scene.activeCamera.inputs.clear();
                 // Run the scene to attach scripts etc.
                 runScene(this.scene, rootUrl);
 
+                var ground = this.scene.getMeshByName("ground") as GroundMesh
+                var fret = this.scene.getMeshByName("fret") as Mesh
+                var cubeFactory = new CubeFactory(this.scene, ground, fret)
+                cubeFactory.Start()
                 // Render.
                 this.engine.runRenderLoop(() => this.scene.render());
             });
