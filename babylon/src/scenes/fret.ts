@@ -83,11 +83,9 @@ export default class MyScript extends Mesh {
     public onKeyboard(touch: KeyboardInfo): void {
         let matchedCube: Cube = null;
         let matchedMeshs = [];
-        console.log(matchedMeshs);
         matchedMeshs = CubeFactory.boxes.filter(box => { 
             return box.GetMesh().intersectsMesh(this, true); 
         });
-        console.log(matchedMeshs);
 
         if(matchedMeshs.length > 0) {
             const value = matchedMeshs[0];
@@ -120,8 +118,6 @@ export default class MyScript extends Mesh {
                     break;
             }
         }
-
-        console.log(matchedCube);
 
         if(matchedCube === null){
             MyScript._score = MyScript._score - 1;
