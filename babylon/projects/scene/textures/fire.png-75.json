@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "files/Flare.png",
+	"url": "files/fire.png",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -13,7 +13,14 @@
 	"wRotationCenter": 0.5,
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"name": "files/Flare.png",
+	"name": "files/fire.png",
+	"metadata": {
+		"ktx2CompressedTextures": {
+			"isUsingCompressedTexture": false
+		},
+		"editorName": "fire.png",
+		"editorId": "fd167c72-aa5a-4df4-b52a-4748ee2d92cd"
+	},
 	"hasAlpha": false,
 	"getAlphaFromRGB": false,
 	"level": 1,

@@ -31,6 +31,8 @@ export default class MyScript extends Mesh {
     
     private _score: number = 0;
 
+    private _scoreElem : HTMLElement =  document.getElementById("score");
+
     /**
      * Called on the node is being initialized.
      * This function is called immediatly after the constructor has been called.
@@ -76,41 +78,41 @@ export default class MyScript extends Mesh {
         console.log(touch.event.key);
 
         CubeFactory.boxes.forEach((value, index)=> {
-            
-                if(value.GetMesh().intersectsMesh(this,false)){
+            console.log("score" + this._score)
 
-                    alert("test")
+                if(value.GetMesh().intersectsMesh(this, false)){
+                    console.log(value.GetMesh().position.x)
                     switch(touch.event.key){
                         case "a":
-                            if(value.GetMesh().position._x == -10)
-                                this._score++
+                            if(value.GetMesh().position.x == 10){
+                                this._score = this._score + 1;
+                            }
                             break;
                         case "z":
-                            if(value.GetMesh().position._x == -5)
-                                this._score++
+                            if(value.GetMesh().position.x == 5){
+                                this._score = this._score + 1;
+                            }
                             break;
                         case "e":
-                            if(value.GetMesh().position._x == 0)
-                                this._score++
+                            if(value.GetMesh().position.x == 0){
+                                this._score = this._score + 1;
+                            }
                             break;
                         case "r":
-                            if(value.GetMesh().position._x == 5)
-                                this._score++
+                            if(value.GetMesh().position._x == -5){
+                                this._score = this._score + 1;
+                            }
                             break;
                         case "t":
-                            if(value.GetMesh().position._x == 10)
-                                this._score++
-                            break
-                        
+                            if(value.GetMesh().position._x == -10){
+                                this._score = this._score + 1;
+                            }
+                            break;
                     }
+                    this._scoreElem.innerHTML = "Score : " + this._score;
+
                     console.log(this._score)
                 }
-
-                
-               
-            
         });
-
     }
-
 }

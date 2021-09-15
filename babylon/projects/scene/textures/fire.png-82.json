@@ -14,6 +14,13 @@
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
 	"name": "files/fire.png",
+	"metadata": {
+		"ktx2CompressedTextures": {
+			"isUsingCompressedTexture": false
+		},
+		"editorName": "fire.png",
+		"editorId": "fb098b13-1fd7-4768-88ef-c68ce32c76a3"
+	},
 	"hasAlpha": false,
 	"getAlphaFromRGB": false,
 	"level": 1,
