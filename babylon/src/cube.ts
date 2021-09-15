@@ -20,7 +20,6 @@ export class Cube {
             const c = cube.shift();
             CubeFactory.boxes = CubeFactory.boxes.filter((cube) => { return cube.name != id } );
             c.GetMesh().dispose();
-            console.log(`Dispose: ${ c.name }`)
         }
     }
 
