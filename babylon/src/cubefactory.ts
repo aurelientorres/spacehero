@@ -7,8 +7,7 @@ export class CubeFactory {
 
     public static ground: GroundMesh;
     public static boxes: Array<Cube>        = [ ];
-    private static _timeout: number         = 3000;
-
+    private static _timeout: number         = 2500;
     private _scene: Scene;
 
     constructor(scene: Scene, ground: GroundMesh){
@@ -20,20 +19,12 @@ export class CubeFactory {
     public Stop(): void {}
 
     private _newBox(): void {
+        CubeFactory._timeout = CubeFactory._timeout > 300 ? CubeFactory._timeout - 25 : 300;
+        const tOut = CubeFactory._timeout;
+        const speed = Cube.getAndUpSpeed();
         CubeFactory.boxes.push(new Cube(this._scene, CubeFactory.ground));
-        if(CubeFactory.boxes.length > 1) {
-            Cube.getAndUpSpeed()
-        }
-        
-        if(CubeFactory._timeout >= 500) {
-            CubeFactory._timeout = CubeFactory._timeout - 50;
-        }
-
-        CubeFactory.boxes.forEach((value) => {
-            value.GetAnimatable().speedRatio = Cube.getAndUpSpeed();
-        });
-
-        setTimeout(() => this._newBox(), CubeFactory._timeout);
+        CubeFactory.boxes.forEach((value) => { value.GetAnimatable().speedRatio = speed; });
+        setTimeout(() => { this._newBox(); }, tOut);
     }
 
 }

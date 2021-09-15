@@ -1,4 +1,5 @@
 import { Mesh, Animatable, Scene, Vector3, StandardMaterial, GroundMesh, Color3, Animation } from "@babylonjs/core";
+import MyScript from "./scenes/fret";
 import { CubeFactory } from "./cubefactory";
 
 
@@ -11,15 +12,22 @@ export class Cube {
     private static _prefix                  = "box";
     private static _startPosition: Vector3  = new Vector3(0, 0.8, -1000);
     private static _endPosition: Vector3    = new Vector3(0, 0.8 , -552.5);
-    private static _speed: number           = 10;
+    private static _speed: number           = 3;
 
     public static dispose(id): void {
-        const box = CubeFactory.boxes.filter((c, i) => { return c.GetMesh().name == id });
-        if(box.length > 0) box.shift().GetMesh().dispose();
+        const cube = CubeFactory.boxes.filter((c, i) => { return c.GetMesh().name == id });
+        if(cube.length > 0) {
+            const c = cube.shift();
+            CubeFactory.boxes = CubeFactory.boxes.filter((cube) => { return cube.name != id } );
+            c.GetMesh().dispose();
+            console.log(`Dispose: ${ c.name }`)
+        }
     }
 
     public static getAndUpSpeed(): number {
-        Cube._speed = Cube._speed + 0.02;
+        if(Cube._speed < 10) {
+            Cube._speed = Cube._speed + 0.04;
+        }
         return Cube._speed;
     }
 
@@ -98,17 +106,33 @@ export class Cube {
             Cube._speed,
             Animation.ANIMATIONTYPE_VECTOR3,
             Animation.ANIMATIONLOOPMODE_CYCLE);
-
+            
         animation.setKeys([
             { frame: 0, value: this._start },
             { frame: 100, value: this._end },
         ]);
         
         this._boxOut.animations.push(animation);
-        this._animatable = this._scene.beginAnimation(this._boxOut, 0, 100, false, Cube._speed, () => Cube.dispose(this.name));
+        this._animatable = this._scene.beginAnimation(this._boxOut, 0, 100, false, Cube._speed, () => { 
+            if( this._boxOut.position.x == this._end.x
+                && this._boxOut.position.y == this._end.y
+                && this._boxOut.position.z == this._end.z) {
+                const score = MyScript.subScore(1);
+                const scoreElem = document.getElementById("score");
+
+                if(score >= -10) {
+                    scoreElem.innerHTML = `score : ${score}`;
+                } else {
+                    scoreElem.style.backgroundColor = "#FF2000";
+                    scoreElem.innerHTML = `T'as perdu sale noob :)`;
+                }
+            }
+            Cube.dispose(this.name); 
+        });
     }
 
     public GetMesh(): Mesh { return this._boxOut; }
+    public GetMeshIn(): Mesh { return this._boxIn; }
     public GetAnimatable(): Animatable { return this._animatable; }
 
 }

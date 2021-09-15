@@ -1,4 +1,5 @@
-import { Mesh, StandardMaterial, Scene, Color3, KeyboardEventTypes, KeyboardInfo } from "@babylonjs/core";
+import { Mesh, StandardMaterial, Scene, Color3, KeyboardEventTypes, KeyboardInfo, Vector3 } from "@babylonjs/core";
+import { Cube } from "../cube";
 import { CubeFactory } from "../cubefactory";
 import { onKeyboardEvent } from "./decorators";
 
@@ -29,8 +30,13 @@ export default class MyScript extends Mesh {
     // @ts-ignore ignoring the super call as we don't want to re-init
     protected constructor(public scene: Scene) { }
     
-    private _score: number = 0;
+    private static _score: number = 0;
 
+    public static subScore(x: number): number {
+        MyScript._score = MyScript._score - x;
+        return MyScript._score;
+    }
+    
     private _scoreElem : HTMLElement =  document.getElementById("score");
 
     /**
@@ -44,6 +50,7 @@ export default class MyScript extends Mesh {
      * Called on the scene starts.
      */
     public onStart(): void {
+        this.scaling = new Vector3(25, 1.5, 10);
         this.material = new StandardMaterial("fret-mat", this.scene);
         this.material.alpha = 0.9;
         (this.material as StandardMaterial).diffuseColor = Color3.FromHexString("#000000");
@@ -74,45 +81,63 @@ export default class MyScript extends Mesh {
 
     @onKeyboardEvent(["a","z","e","r","t"], KeyboardEventTypes.KEYDOWN)
     public onKeyboard(touch: KeyboardInfo): void {
-
-        console.log(touch.event.key);
-
-        CubeFactory.boxes.forEach((value, index)=> {
-            console.log("score" + this._score)
-
-                if(value.GetMesh().intersectsMesh(this, false)){
-                    console.log(value.GetMesh().position.x)
-                    switch(touch.event.key){
-                        case "a":
-                            if(value.GetMesh().position.x == 10){
-                                this._score = this._score + 1;
-                            }
-                            break;
-                        case "z":
-                            if(value.GetMesh().position.x == 5){
-                                this._score = this._score + 1;
-                            }
-                            break;
-                        case "e":
-                            if(value.GetMesh().position.x == 0){
-                                this._score = this._score + 1;
-                            }
-                            break;
-                        case "r":
-                            if(value.GetMesh().position._x == -5){
-                                this._score = this._score + 1;
-                            }
-                            break;
-                        case "t":
-                            if(value.GetMesh().position._x == -10){
-                                this._score = this._score + 1;
-                            }
-                            break;
-                    }
-                    this._scoreElem.innerHTML = "Score : " + this._score;
-
-                    console.log(this._score)
-                }
+        let matchedCube: Cube = null;
+        let matchedMeshs = [];
+        console.log(matchedMeshs);
+        matchedMeshs = CubeFactory.boxes.filter(box => { 
+            return box.GetMesh().intersectsMesh(this, true); 
         });
+        console.log(matchedMeshs);
+
+        if(matchedMeshs.length > 0) {
+            const value = matchedMeshs[0];
+            while(matchedMeshs.length > 0) { matchedMeshs.pop(); }
+            switch(touch.event.key){
+                case "a":
+                    if(value.GetMesh().position.x == 10){
+                        matchedCube = value;
+                    }
+                    break;
+                case "z":
+                    if(value.GetMesh().position.x == 5){
+                        matchedCube = value;
+                    }
+                    break;
+                case "e":
+                    if(value.GetMesh().position.x == 0){
+                        matchedCube = value;
+                    }
+                    break;
+                case "r":
+                    if(value.GetMesh().position._x == -5){
+                        matchedCube = value;
+                    }
+                    break;
+                case "t":
+                    if(value.GetMesh().position._x == -10){
+                        matchedCube = value;
+                    }
+                    break;
+            }
+        }
+
+        console.log(matchedCube);
+
+        if(matchedCube === null){
+            MyScript._score = MyScript._score - 1;
+        } else {
+            MyScript._score = MyScript._score + 1;
+            Cube.dispose(matchedCube.name);
+        }
+        this.showScore();
+    }
+
+    public showScore() {
+        if(MyScript._score >= -10) {
+            this._scoreElem.innerHTML = `score : ${MyScript._score}`;   
+        } else {
+            this._scoreElem.style.backgroundColor = "#FF2000";
+            this._scoreElem.innerHTML = `T'as perdu sale noob :)`;
+        }
     }
 }

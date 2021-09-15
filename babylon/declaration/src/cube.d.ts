@@ -22,5 +22,6 @@ export declare class Cube {
     private _configureColor;
     private _configureAnimation;
     GetMesh(): Mesh;
+    GetMeshIn(): Mesh;
     GetAnimatable(): Animatable;
 }

@@ -9,6 +9,8 @@
     <script src="./node_modules/cannon/build/cannon.js" type="text/javascript"></script>
 
     <style rel="stylesheet" type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
         html,
         body {
             overflow: hidden;
@@ -32,8 +34,16 @@
             top: 0;
             left: 0;
             height: 50px;
-            background-color: aliceblue;
+            line-height: 50px;
+            text-align:center;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #428bca;
+            color:white;
             z-index: -2;
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
@@ -46,6 +56,6 @@
     </script>
 </body>
 
-<div id="score">score</div>
+<div id="score">score : 0</div>
 
 </html>

@@ -24,7 +24,8 @@ export default class MyScript extends Mesh {
      * @warn do not fill.
      */
     protected constructor(scene: Scene);
-    private _score;
+    private static _score;
+    static subScore(x: number): number;
     private _scoreElem;
     /**
      * Called on the node is being initialized.
@@ -47,4 +48,5 @@ export default class MyScript extends Mesh {
      */
     onMessage(name: string, data: any, sender: any): void;
     onKeyboard(touch: KeyboardInfo): void;
+    showScore(): void;
 }

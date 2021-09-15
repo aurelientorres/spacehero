@@ -44,8 +44,8 @@ export class Game {
                 // Run the scene to attach scripts etc.
                 runScene(this.scene, rootUrl);
 
-                var ground = this.scene.getMeshByName("ground") as GroundMesh
-                var fret = this.scene.getMeshByName("fret") as Mesh
+                var ground = this.scene.getMeshByName("ground") as GroundMesh;
+                this.scene.getMeshByName("fret") as Mesh;
                 var cubeFactory = new CubeFactory(this.scene, ground)
                 cubeFactory.Start()
                 // Render.
