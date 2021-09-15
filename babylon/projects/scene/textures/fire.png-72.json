@@ -15,11 +15,11 @@
 	"isBlocking": true,
 	"name": "files/fire.png",
 	"metadata": {
-		"editorName": "fire.png",
-		"editorId": "378cc017-f698-410f-8a97-0355cd16497c",
 		"ktx2CompressedTextures": {
 			"isUsingCompressedTexture": false
-		}
+		},
+		"editorName": "fire.png",
+		"editorId": "fd167c72-aa5a-4df4-b52a-4748ee2d92cd"
 	},
 	"hasAlpha": false,
 	"getAlphaFromRGB": false,
